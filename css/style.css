@@ -565,7 +565,9 @@ li{
 
 /* product Banner */
 .banner-section{
-     background-color: #243a6f;
+     /* background-color: #243a6f; */
+     background-color: #00cec9;
+     
     
 }
 .product-banner{
