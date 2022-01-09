@@ -713,3 +713,43 @@ li{
 .testimonial h4{
     margin-top: 1rem;
 }
+
+/* Brands */
+.brand-section{
+    padding: 3rem 0;
+}
+.brand-center{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 3rem;
+}
+.brand{
+
+    height: 7rem;
+    width: 7rem;
+    margin: 0 auto;
+
+}
+.brand img{
+    object-fit: cover;
+
+}
+@media(max-width:768px){
+    .brand-center{
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    }
+}
+@media(max-width:305px) {
+    .brand-center {
+        
+        gap: 1rem;
+    }
+    .brand {
+
+        height: 5rem;
+        width: 5rem;
+        margin: 0 auto;
+
+    }
+}
