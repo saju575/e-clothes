@@ -556,5 +556,99 @@ li{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
         gap: 4rem 2rem;
+
     }
+}
+.latest-pdt{
+    padding-bottom: 10rem;
+}
+
+/* product Banner */
+.banner-section{
+     background-color: #243a6f;
+    
+}
+.product-banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    height: 50rem;
+    grid-column-gap: 2rem;
+    align-items: center;
+}
+
+.product-banner .left img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.product-banner .right{
+    align-items: center;
+    text-align: center;
+    padding: 1.6rem;
+}
+.product-banner .content h2{
+    color: #fbb419;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.product-banner .content .discount{
+    color: #b888ff;
+}
+.product-banner .content h1 span{
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+}
+
+@media(max-width:996px){
+    .product-banner .content h1 span{
+
+        font-size: 4rem;
+    }
+}
+@media(max-width:800px) {
+    .product-banner .left img{
+        width: 48%;
+    }
+    .left{
+        text-align: center;
+    }
+    .product-banner{
+       display: grid;
+       grid-template-columns: 1fr;
+       
+    }
+}
+@media(max-width:562px){
+    .product-banner .left img {
+        width: 60%;
+    }
+    .product-banner .content h1 span {
+
+        font-size: 3rem;
+    }
+    .product-banner .content h2{
+        font-size: 2rem;
+    }
+    .banner-section{
+        padding: 2.5rem 0;
+    }
+}
+@media(max-width:450px){
+    .product-banner .left img {
+        width: 80%;
+    }
+    .product-banner .content h1 span {
+
+        font-size: 2.8rem;
+    }
+
+    .product-banner .content h2 {
+        font-size: 1.8rem;
+    }
+
 }
